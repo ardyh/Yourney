@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/alimutaw12/Yourney#readme",
   "dependencies": {
+    "constantinople": "^4.0.1",
     "express": "^4.17.1",
     "jade": "^1.11.0",
     "pug": "^2.0.4"
