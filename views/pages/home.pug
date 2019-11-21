@@ -17,27 +17,50 @@ block content
       .search-in-city
         .a Temukan Trip Plan Favoritmu
         .two-search-bars
-          .budget-estimate Estimasi Budget 
-          .trip-duration Durasi Perjalanan 
+          .budget-estimate 
+            .p Estimasi Budget 
+            .budget-queries
+              input.budget-query-low
+              .p hingga
+              input.budget-query-high
+          .trip-duration 
+            .p Durasi Perjalanan
+            .duration-queries
+              input.duration-query-low
+              .p -
+              input.duration-query-high
+              .p hari
     .hero-items
       .hero-item
         img.hero-item-img(src='/assets/img/playsign.png')
         .hero-item-desc
-          p.hero-item-title PlayGlobals
+          p.hero-item-title Bandung Yang Berbeda
+          .duration-and-budget
+            p.duration-value 3 Hari
+            p.budget-value ~ Rp.5.000.000
           p.hero-item-subtitle
-            | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          button.button.hero-item-button(onclick="location.href='/play/'") PLAY NOW
+            .p  Tempat Yang Dikunjungi
+            .p  Gedung Sate, Sanghyang Heulut, Alun Alun Cicendo, Gunung Moko
+          button.button.hero-item-button(onclick="location.href='/play/'") SELENGKAPNYA
       .hero-item
-        img.hero-item-img(src='/assets/img/learnsign.png')
+        img.hero-item-img(src='/assets/img/playsign.png')
         .hero-item-desc
-          p.hero-item-title LearnSIGN
+          p.hero-item-title Bandung Yang Berbeda
+          .duration-and-budget
+            p.duration-value 3 Hari
+            p.budget-value ~ Rp.5.000.000
           p.hero-item-subtitle
-            | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          button.button.hero-item-button(onclick="location.href='/learn/'") LEARN NOW
+            .p  Tempat Yang Dikunjungi
+            .p  Gedung Sate, Sanghyang Heulut, Alun Alun Cicendo, Gunung Moko
+          button.button.hero-item-button(onclick="location.href='/play/'") SELENGKAPNYA
       .hero-item
-        img.hero-item-img(src='/assets/img/commsign.png')
+        img.hero-item-img(src='/assets/img/playsign.png')
         .hero-item-desc
-          p.hero-item-title CommSIGA
+          p.hero-item-title Bandung Yang Berbeda
+          .duration-and-budget
+            p.duration-value 3 Hari
+            p.budget-value ~ Rp.5.000.000
           p.hero-item-subtitle
-            | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          button.button.hero-item-button(onclick="location.href='/thread/'") CHAT NOW
+            .p  Tempat Yang Dikunjungi
+            .p  Gedung Sate, Sanghyang Heulut, Alun Alun Cicendo, Gunung Moko
+          button.button.hero-item-button(onclick="location.href='/play/'") SELENGKAPNYA
