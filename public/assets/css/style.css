@@ -117,6 +117,18 @@ body {
   flex-direction: row;
 
 }
+.create-trip-plan{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  margin: 0 0 5% 0;
+}
+.create-trip-button{
+  margin: 0 0 0 2%;
+  background-color: #9187FF;
+  color: white;
+}
 .hero-item, .play-item {
   background: white;
   width: 20vw;
