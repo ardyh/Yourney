@@ -21,6 +21,11 @@ app.get('/detailtrip', (req, res) => res.render('pages/detailtrip', {
     username: 'Fariz'
 }));
 
+app.get('/blog', (req, res) => res.render('pages/blog', {
+    userId: 1,
+    username: 'Fariz'
+}));
+
 app.get('/leaderboard/', (req, res) => res.render('pages/leaderboard', {
     userId: 1,
     username: 'Fariz',
