@@ -16,6 +16,11 @@ app.get('/', (req, res) => res.render('pages/home', {
     username: 'Fariz'
 }));
 
+app.get('/detail-city', (req, res) => res.render('pages/detailcity', {
+    userId: 1,
+    username: 'Fariz'
+}));
+
 app.get('/detailtrip', (req, res) => res.render('pages/detailtrip', {
     userId: 1,
     username: 'Fariz'

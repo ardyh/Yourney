@@ -133,12 +133,25 @@ body {
   margin-bottom: 20px;
 }
 
+.margin-lft {
+  margin-left: 20px;
+}
+
 .ctn-home h1 {
   font-weight: 900;
 }
 
 .city-background {
   background-position: center;
+}
+
+.home-background {
+  background-size: cover;
+}
+
+.city-button {
+  height: 194px;
+  width: 194px;
 }
 
 .ctn-header {

@@ -2,120 +2,70 @@ extends ../layout
 
 block content
   .ctn-header
-    section.hero.brdr-rds20.city-background(style=`background-image:url(/assets/img/tempat-wisata/gedung-sate-bandung-opacity.jpg)`)
+    section.hero.brdr-rds20.city-background
       .hero-body
         .container.ctn-home.txt-cntr
-          h1.title Bandung
-          button.button.color-text-primary.color-primary.is-rounded.margin-btn Cari destinasi lain
-          section.hero.color-primary.ctn-content.brdr-rds20
-            .hero-body
-              .container.txt-lft
-                h2.subtitle.color-text-primary Temukan Trip Plan Favoritmu
-                .columns
-                  .column.is-two-thirds
-                    section.hero.is-light.brdr-rds20
-                      .hero-body.hero-estimasi
-                        .container
-                          h2.subtitle Estimasi Budget
-                          .field.has-addons
-                            p.control
-                              a.button.is-static Rp
-                            p.control.is-expanded
-                              input.input(value='500.000')
-                            p.control
-                              a.button.is-static1.is-white Hingga
-                            p.control
-                              a.button.is-static Rp
-                            p.control.is-expanded
-                              input.input(value='10.000.000')
-                  .column
-                    section.hero.is-light.brdr-rds20
-                      .hero-body.hero-estimasi
-                        .container
-                          h2.subtitle Durasi Perjalanan
-                          .field.has-addons
-                            p.control.is-expanded
-                              input.input(value='1')
-                            p.control
-                              a.button.is-static1.is-white -
-                            p.control.is-expanded
-                              input.input(value='3')
-                            p.control
-                              a.button.is-static1.is-white hari
+          h1.title #AntiWacana
+          h2.subtitle Sudah ga zaman lagi wacana doang.
+            br
+            | Rencanakan sekarang dan berangkat setelahnya
+          .field.has-addons.has-addons-centered
+            p.control(style=`width:80%`)
+              input.input(placeholder='Cari....')
+            p.control
+              a.button.is-info Go.
 
   .home-wrapper
+    .columns(style=`margin-bottom:40px`)
+
+      .column
+        .columns
+          column
+            img.image.is-96x96(src='/assets/img/tap.png')
+          column
+            p.margin-lft.title-card(style=`margin-bottom:10px`) Mudah
+            p.margin-lft(style=`font-size:12px`) Buat travel plan kamu sendiri
+              br
+              | atau sesuaikan dengan travel
+              br
+              | plan yang sudah ada
+
+      .column
+        .columns
+          column
+            img.image.is-96x96(src='/assets/img/clock.png')
+          column
+            p.margin-lft.title-card(style=`margin-bottom:10px`) Cepat
+            p.margin-lft(style=`font-size:12px`) Pilih travel plan kesukaanmu.
+              br
+              | Langsung berangkat
+
+      .column
+        .columns
+          column
+            img.image.is-96x96(src='/assets/img/shield.png')
+          column
+            p.margin-lft.title-card(style=`margin-bottom:10px`) Pasti Aman
+            p.margin-lft(style=`font-size:12px`) Gak perlu takut lagi,
+              br
+              | karena  transaksimu sudah
+              br
+              | termasuk asuransi perjalananmu!
+
     .txt-cntr.margin-btn
-      p.title Tidak menemukan trip plan yang cocok?
-        button.button.color-text-primary.color-primary.is-rounded(style=`margin-left:20px`) Buat Trip Plan
+      p.subtitle.title-card Kota Wisata Populer
+      p.title-card Temukan rencana perjalanan terbaikmu disini!
+
     .columns
-      .column
-        .card
-          .card-image
-            figure.image
-              img(src='/assets/img/tempat-wisata/sanghyang-heulut1.jpg')
-          .card-content
-            .media
-              .media-content
-                p.title.is-5.title-card Bandung yang berbeda
-                p.subtitle.is-6 3 Hari ~ Rp 5.000.000,-
-                p
-                  i.fas.fa-star.rating-orange
-                  i.fas.fa-star.rating-orange
-                  i.fas.fa-star.rating-orange
-                  i.fas.fa-star.rating-orange
-                  i.fas.fa-star.rating-orange
-                  |  5.0 / 5.0
-            .content
-              span.title-card Tempat yang dikunjungi
-              br
-              br
-              | Gedung Sate, Sanghyang Heulut, Alun Alun Cicendo, Gunung Moko
-            a.btn-detail.color-primary.color-text-primary.is-fullwidth.button(href='/detailtrip') Selengkapnya
 
       .column
-        .card
-          .card-image
-            figure.image
-              img(src='/assets/img/tempat-wisata/goa-pawon.jpg')
-          .card-content
-            .media
-              .media-content
-                p.title.is-5.title-card Surganya Bandung
-                p.subtitle.is-6 3 Hari ~ Rp 2.000.000,-
-                p
-                  i.fas.fa-star.rating-orange
-                  i.fas.fa-star.rating-orange
-                  i.fas.fa-star.rating-orange
-                  i.fas.fa-star.rating-orange
-                  i.fas.fa-star.rating-orange
-                  |  4.8 / 5.0
-            .content
-              span.title-card Tempat yang dikunjungi
-              br
-              br
-              | Goa Pawon, Lodge Maribaya, Floating Market
-            a.btn-detail.color-primary.color-text-primary.is-fullwidth.button(href='/detailtrip') Selengkapnya
+        a.button.city-button.home-background.bandung-link(style=`background-image:url(/assets/img/tempat-wisata/bandung-kotak-opacity.jpg)` href=`/detail-city`) Bandung
 
       .column
-        .card
-          .card-image
-            figure.image
-              img(src='/assets/img/tempat-wisata/maribaya.jpg')
-          .card-content
-            .media
-              .media-content
-                p.title.is-5.title-card Wisata Lembang
-                p.subtitle.is-6 1 Hari ~ Rp 500.000,-
-                p
-                  i.fas.fa-star.rating-orange
-                  i.fas.fa-star.rating-orange
-                  i.fas.fa-star.rating-orange
-                  i.fas.fa-star.rating-orange
-                  i.fas.fa-star
-                  | 4.0 / 5.0
-            .content
-              span.title-card Tempat yang dikunjungi
-              br
-              br
-              | Curug Maribaya, Lodge Maribaya
-            a.button.btn-detail.color-primary.color-text-primary.is-fullwidth.button(href='/detailtrip') Selengkapnya
+        a.button.city-button.home-background(style=`background-image:url(/assets/img/tempat-wisata/bali-kotak-opacity.jpg)` href=`/detail-city`) Bali
+
+      .column
+        a.button.city-button.home-background(style=`background-image:url(/assets/img/tempat-wisata/yogyakarta-kotak-opacity.jpg)` href=`/detail-city`) Yogyakarta
+
+      .column
+        a.button.city-button.home-background(style=`background-image:url(/assets/img/tempat-wisata/jakarta-kotak-opacity.jpg)` href=`/detail-city`) Jakarta
