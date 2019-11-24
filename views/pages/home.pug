@@ -17,13 +17,13 @@ block content
       .search-in-city
         .a Temukan Trip Plan Favoritmu
         .two-search-bars
-          .budget-estimate 
-            .p Estimasi Budget 
+          .budget-estimate
+            .p Estimasi Budget
             .budget-queries
               input.budget-query-low
               .p hingga
               input.budget-query-high
-          .trip-duration 
+          .trip-duration
             .p Durasi Perjalanan
             .duration-queries
               input.duration-query-low
@@ -31,39 +31,77 @@ block content
               input.duration-query-high
               .p hari
       .create-trip-plan
-        .span Tidak menemukan Trip plan yang cocok? 
+        .span Tidak menemukan Trip plan yang cocok?
         .button.create-trip-button Buat Trip Plan
-    .hero-items
-      .hero-item
-        img.hero-item-img(src='/assets/img/playsign.png')
-        .hero-item-desc
-          p.hero-item-title Bandung Yang Berbeda
-          .duration-and-budget
-            p.duration-value 3 Hari
-            p.budget-value ~ Rp.5.000.000
-          p.hero-item-subtitle
-            .p  Tempat Yang Dikunjungi
-            .p  Gedung Sate, Sanghyang Heulut, Alun Alun Cicendo, Gunung Moko
-          button.button.hero-item-button(onclick="location.href='/play/'") SELENGKAPNYA
-      .hero-item
-        img.hero-item-img(src='/assets/img/playsign.png')
-        .hero-item-desc
-          p.hero-item-title Bandung Yang Berbeda
-          .duration-and-budget
-            p.duration-value 3 Hari
-            p.budget-value ~ Rp.5.000.000
-          p.hero-item-subtitle
-            .p  Tempat Yang Dikunjungi
-            .p  Gedung Sate, Sanghyang Heulut, Alun Alun Cicendo, Gunung Moko
-          button.button.hero-item-button(onclick="location.href='/play/'") SELENGKAPNYA
-      .hero-item
-        img.hero-item-img(src='/assets/img/playsign.png')
-        .hero-item-desc
-          p.hero-item-title Bandung Yang Berbeda
-          .duration-and-budget
-            p.duration-value 3 Hari
-            p.budget-value ~ Rp.5.000.000
-          p.hero-item-subtitle
-            .p  Tempat Yang Dikunjungi
-            .p  Gedung Sate, Sanghyang Heulut, Alun Alun Cicendo, Gunung Moko
-          button.button.hero-item-button(onclick="location.href='/play/'") SELENGKAPNYA
+    .columns
+      .column
+        .card
+          .card-image
+            figure.image
+              img(src='/assets/img/tempat-wisata/sanghyang-heulut.jpg')
+          .card-content
+            .media
+              .media-content
+                p.title.is-5.title-card Bandung yang berbeda
+                p.subtitle.is-6 3 Hari ~ Rp 5.000.000,-
+                p
+                  i.fas.fa-star.rating-orange
+                  i.fas.fa-star.rating-orange
+                  i.fas.fa-star.rating-orange
+                  i.fas.fa-star.rating-orange
+                  i.fas.fa-star.rating-orange
+                  |  5.0 / 5.0
+            .content
+              span.title-card Tempat yang dikunjungi
+              br
+              br
+              | Gedung Sate, Sanghyang Heulut, Alun Alun Cicendo, Gunung Moko
+            button.btn-detail.color-primary.color-text-primary.is-fullwidth.button Selengkapnya
+
+      .column
+        .card
+          .card-image
+            figure.image
+              img(src='/assets/img/tempat-wisata/goa-pawon.jpg')
+          .card-content
+            .media
+              .media-content
+                p.title.is-5.title-card Surganya Bandung
+                p.subtitle.is-6 3 Hari ~ Rp 2.000.000,-
+                p
+                  i.fas.fa-star.rating-orange
+                  i.fas.fa-star.rating-orange
+                  i.fas.fa-star.rating-orange
+                  i.fas.fa-star.rating-orange
+                  i.fas.fa-star.rating-orange
+                  |  4.8 / 5.0
+            .content
+              span.title-card Tempat yang dikunjungi
+              br
+              br
+              | Goa Pawon, Lodge Maribaya, Floating Market
+            button.btn-detail.color-primary.color-text-primary.is-fullwidth.button Selengkapnya
+
+      .column
+        .card
+          .card-image
+            figure.image
+              img(src='/assets/img/tempat-wisata/maribaya.jpg')
+          .card-content
+            .media
+              .media-content
+                p.title.is-5.title-card Wisata Lembang
+                p.subtitle.is-6 3 Hari ~ Rp 500.000,-
+                p
+                  i.fas.fa-star.rating-orange
+                  i.fas.fa-star.rating-orange
+                  i.fas.fa-star.rating-orange
+                  i.fas.fa-star.rating-orange
+                  i.fas.fa-star
+                  |  4.0 / 5.0
+            .content
+              span.title-card Tempat yang dikunjungi
+              br
+              br
+              | Curug Maribaya, Lodge Maribaya
+            button.btn-detail.color-primary.color-text-primary.is-fullwidth.button Selengkapnya

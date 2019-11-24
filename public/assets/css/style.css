@@ -52,7 +52,6 @@ body {
 .home-wrapper {
   margin: 30px 15vw 0 15vw;
   min-height: 75vh;
-  text-align: center;
 }
 .hero-title {
   font-weight: 600;
@@ -129,6 +128,35 @@ body {
   background-color: #9187FF;
   color: white;
 }
+.card {
+  border-radius: 20px
+}
+
+.title-card {
+  font-weight: 900;
+}
+
+.rating-orange {
+  color : orange;
+}
+
+.color-primary {
+  background-color: #9187FF;
+}
+
+.color-text-primary {
+  color : white;
+}
+
+.image img {
+  border-radius: 20px;
+  height: 194px;
+}
+
+.btn-detail {
+  border-radius: 20px;
+}
+
 .hero-item, .play-item {
   background: white;
   width: 20vw;
@@ -268,10 +296,10 @@ body {
   color: rgb(253, 54, 64);
   border: 1px solid rgb(253, 54, 64);
   margin-left: 20px;
-} 
+}
 .reply-button {
  color: rgb(19, 190, 76);
- border-color: rgb(19, 190, 76); 
+ border-color: rgb(19, 190, 76);
 }
 .share-button {
   color: #4E3D94;
@@ -319,7 +347,7 @@ body {
   font-size: 18px;
   font-weight: 600;
   padding: 5px 25px;
-  min-height: 50px; 
+  min-height: 50px;
   font-family: inherit;
 }
 .hero-item-button:hover {
@@ -384,7 +412,7 @@ body {
 }
 .back-text, .back-text:hover {
   color: #9885BA;
-  font-size: 24px;  
+  font-size: 24px;
   font-weight: 800;
 }
 .play-title, .thread-title {
@@ -397,7 +425,7 @@ body {
   font-size: 18px;
   color: #9885BA;
   font-weight: 600;
-  margin-bottom: 40px; 
+  margin-bottom: 40px;
 }
 .learn-wrapper {
   margin-top: 20px;
