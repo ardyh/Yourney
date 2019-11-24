@@ -128,6 +128,49 @@ body {
   background-color: #9187FF;
   color: white;
 }
+
+.margin-btn {
+  margin-bottom: 20px;
+}
+
+.ctn-home h1 {
+  font-weight: 900;
+}
+
+.city-background {
+  background-position: center;
+}
+
+.ctn-header {
+  padding: 40px 100px;
+}
+
+.ctn-content {
+  margin: 20px 100px;
+}
+
+.hero-estimasi {
+  padding: 1rem 1.5rem;
+}
+
+.button.is-static1 {
+  background-color: transparent;
+  pointer-events: none;
+  border-color: transparent;
+}
+
+.brdr-rds20 {
+  border-radius: 20px;
+}
+
+.txt-cntr {
+  text-align: center;
+}
+
+.txt-lft {
+  text-align: left;
+}
+
 .card {
   border-radius: 20px
 }

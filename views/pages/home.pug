@@ -1,38 +1,51 @@
 extends ../layout
 
 block content
+  .ctn-header
+    section.hero.brdr-rds20.city-background(style=`background-image:url(/assets/img/tempat-wisata/gedung-sate-bandung-opacity.jpg)`)
+      .hero-body
+        .container.ctn-home.txt-cntr
+          h1.title Bandung
+          button.button.color-text-primary.color-primary.is-rounded.margin-btn Cari destinasi lain
+          section.hero.color-primary.ctn-content.brdr-rds20
+            .hero-body
+              .container.txt-lft
+                h2.subtitle.color-text-primary Temukan Trip Plan Favoritmu
+                .columns
+                  .column.is-two-thirds
+                    section.hero.is-light.brdr-rds20
+                      .hero-body.hero-estimasi
+                        .container
+                          h2.subtitle Estimasi Budget
+                          .field.has-addons
+                            p.control
+                              a.button.is-static Rp
+                            p.control.is-expanded
+                              input.input(value='500.000')
+                            p.control
+                              a.button.is-static1.is-white Hingga
+                            p.control
+                              a.button.is-static Rp
+                            p.control.is-expanded
+                              input.input(value='10.000.000')
+                  .column
+                    section.hero.is-light.brdr-rds20
+                      .hero-body.hero-estimasi
+                        .container
+                          h2.subtitle Durasi Perjalanan
+                          .field.has-addons
+                            p.control.is-expanded
+                              input.input(value='1')
+                            p.control
+                              a.button.is-static1.is-white -
+                            p.control.is-expanded
+                              input.input(value='3')
+                            p.control
+                              a.button.is-static1.is-white hari
+
   .home-wrapper
-    .hero-title
-      | Connecting the world
-      br
-      | through
-      span.hero-title-bold SIGN
-    .hero-subtitle
-      | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-      br
-      |  ut labore et dolore magna aliqua.
-    .header-search-bar
-      .city-header
-        .p Bandung
-      .search-in-city
-        .a Temukan Trip Plan Favoritmu
-        .two-search-bars
-          .budget-estimate
-            .p Estimasi Budget
-            .budget-queries
-              input.budget-query-low
-              .p hingga
-              input.budget-query-high
-          .trip-duration
-            .p Durasi Perjalanan
-            .duration-queries
-              input.duration-query-low
-              .p -
-              input.duration-query-high
-              .p hari
-      .create-trip-plan
-        .span Tidak menemukan Trip plan yang cocok?
-        .button.create-trip-button Buat Trip Plan
+    p Tidak menemukan trip plan yang cocok?
+      button A
     .columns
       .column
         .card
@@ -91,14 +104,14 @@ block content
             .media
               .media-content
                 p.title.is-5.title-card Wisata Lembang
-                p.subtitle.is-6 3 Hari ~ Rp 500.000,-
+                p.subtitle.is-6 1 Hari ~ Rp 500.000,-
                 p
                   i.fas.fa-star.rating-orange
                   i.fas.fa-star.rating-orange
                   i.fas.fa-star.rating-orange
                   i.fas.fa-star.rating-orange
                   i.fas.fa-star
-                  |  4.0 / 5.0
+                  | 4.0 / 5.0
             .content
               span.title-card Tempat yang dikunjungi
               br
