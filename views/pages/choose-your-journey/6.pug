@@ -1,0 +1,138 @@
+extends ../../layout
+
+block content
+  .ctn-header
+    section.hero.brdr-rds20.city-background(style=`background-image:url(/assets/img/tempat-wisata/sanghyang-heulut1-opacity.jpg)`)
+      .hero-body
+        .container
+          h1.title.title-card Bandung yang mantap
+          h2.subtitle 4 Hari - Rp 5.020.000,-
+          .columns
+            .column.is-four-fifths
+              p
+                i.fas.fa-star
+                i.fas.fa-star
+                i.fas.fa-star
+                i.fas.fa-star
+                i.fas.fa-star
+                |  0.0 / 5.0
+            .column.txt-rght
+              a.button.color-primary.color-text-primary.is-rounded(style=`margin-right:5px` href=`#`) Edit
+              button.button.color-primary.color-text-primary.is-rounded Gunakan
+
+  .home-wrapper
+    .columns
+      .column
+        .card.color-primary
+          .card-content
+            .media
+              .media-content
+                .txt-cntr.margin-btn
+                  h2.subtitle.title-card.color-text-primary Timeline
+                .columns(style=`margin:0 10`)
+                  .column
+                    button.btn-detail.is-light.is-fullwidth.button Day 1
+                  .column
+                    button.btn-detail.is-light.is-fullwidth.button Day 2
+                  .column
+                    button.btn-detail.is-light.is-fullwidth.button Day 3
+                  .column
+                    button.btn-detail.is-primary.is-fullwidth.button Day 4
+            .content
+              .card.is-light.margin-btn
+                .card-content
+                  .media
+                    .media-content
+                      .card.is-danger
+                        .card-content
+                          .media(style=`border:0px`)
+                            .media-content
+                              .columns
+                                .column
+                                  figure.image.is-2by1
+                                    img(src='/assets/img/tempat-wisata/bandung.jpg')
+                                .column
+                                  p.subtitle.title-card Gedung Sate
+                                  p Jalan Diponegoro No.1 Bandung
+                                  p
+                                    i.fas.fa-circle
+                                    span(style=`margin-left:20px`) 08.00 - 10.00 WIB
+                                .column.txt-rght
+                                  p tiket masuk
+                                  p.subtitle.title-card Rp 0,-
+                                  .field.is-grouped(style=`justify-content: flex-end`)
+                                    p.control
+                                      button.btn-detail.is-light.button Ganti
+                                    p.control
+                                      button.btn-detail.is-light.button Hapus
+
+              .card.is-light.margin-btn
+                .card-content
+                  .media
+                    .media-content
+                      .card.is-danger
+                        .card-content
+                          .media(style=`border:0px`)
+                            .media-content
+                              .columns
+                                .column.is-three-quarters
+                                  p.subtitle.title-card GO-RIDE (5.2 km)
+                                  p
+                                    i.fas.fa-circle
+                                    span(style=`margin-left:20px`) Gedung Sate to Bandara Husein Sastranegara
+                                .column.txt-rght
+                                  p estimasi biaya
+                                  p.subtitle.title-card Rp 11.000,-
+                                  .field.is-grouped(style=`justify-content: flex-end`)
+                                    p.control
+                                      button.btn-detail.is-light.button Cari Alternatif
+
+              .card.is-light
+                .card-content
+                  .media
+                    .media-content
+                      .card.is-danger
+                        .card-content
+                          .media(style=`border:0px`)
+                            .media-content
+                              .columns
+                                .column
+                                  figure.image.is-2by1
+                                    img(src='/assets/img/tempat-wisata/husein-sastranegara.jpg')
+                                .column
+                                  p.subtitle.title-card Bandara Husein Sastranegara
+                                  p Jl. Pajajaran No.156 Bandung
+                                  p
+                                    i.fas.fa-circle
+                                    span(style=`margin-left:20px`) tiba pukul 11.00 WIB
+                                .column.txt-rght
+                                  .field.is-grouped(style=`justify-content: flex-end`)
+                                    p.control
+                                      button.btn-detail.is-light.button Ganti
+                                    p.control
+                                      button.btn-detail.is-light.button Hapus
+
+
+  .modal(id=`modalSaveTripPlan`)
+    .modal-background
+    .modal-card
+      header.modal-card-head
+        p.modal-card-title Save
+      section.modal-card-body
+        .field.has-addons
+          p.control.is-expanded
+            input.input(placeholder='Nama...')
+
+      footer.modal-card-foot
+        a.button(href=`/detailtrip/edit/6`) Simpan
+        button.button(id=`closeModal`) Cancel
+
+block scripts
+  script().
+    $("#saveBtn").click(function() {
+      $("#modalSaveTripPlan").addClass("is-active")
+    })
+
+    $("#closeModal").click(function() {
+      $("#modalSaveTripPlan").removeClass("is-active")
+    })

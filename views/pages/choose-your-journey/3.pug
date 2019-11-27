@@ -1,0 +1,166 @@
+extends ../../layout
+
+block content
+  .ctn-header
+    section.hero.brdr-rds20.city-background(style=`background-image:url(/assets/img/tempat-wisata/sanghyang-heulut1-opacity.jpg)`)
+      .hero-body
+        .container
+          h1.title.title-card Bandung yang berbeda
+          h2.subtitle 3 Hari - Rp 5.000.000,-
+          .columns
+            .column.is-four-fifths
+              p
+                i.fas.fa-star.rating-orange
+                i.fas.fa-star.rating-orange
+                i.fas.fa-star.rating-orange
+                i.fas.fa-star.rating-orange
+                i.fas.fa-star.rating-orange
+                |  5.0 / 5.0
+            .column.txt-rght
+              a.button.color-primary.color-text-primary.is-rounded(style=`margin-right:5px` href=`/detailtrip/edit/6`) Save
+
+  .home-wrapper
+    .columns
+      .column
+        .card.color-primary
+          .card-content
+            .media
+              .media-content
+                .txt-cntr.margin-btn
+                  h2.subtitle.title-card.color-text-primary Timeline
+                .columns(style=`margin:0 10`)
+                  .column
+                    button.btn-detail.is-light.is-fullwidth.button Day 1
+                  .column
+                    button.btn-detail.is-light.is-fullwidth.button Day 2
+                  .column
+                    button.btn-detail.is-light.is-fullwidth.button Day 3
+                  .column
+                    button.btn-detail.is-primary.is-fullwidth.button Day 4
+                  .column.is-one-fifth
+                    a.btn-detail.is-light.is-fullwidth.button(href=`/detailtrip/edit/2`) +
+            .content
+
+              .card.is-light.margin-btn
+                .card-content
+                  .media
+                    .media-content
+                      .card.is-danger
+                        .card-content
+                          .media(style=`border:0px`)
+                            .media-content
+                              .columns
+                                .column
+                                  figure.image.is-2by1
+                                    img(src='/assets/img/tempat-wisata/bandung.jpg')
+                                .column
+                                  p.subtitle.title-card Gedung Sate
+                                  p Jalan Diponegoro No.1 Bandung
+                                  p
+                                    i.fas.fa-circle
+                                    span(style=`margin-left:20px`) 08.00 - 10.00 WIB
+                                .column.txt-rght
+                                  p tiket masuk
+                                  p.subtitle.title-card Rp 0,-
+                                  .field.is-grouped(style=`justify-content: flex-end`)
+                                    p.control
+                                      button.btn-detail.is-light.button Ganti
+                                    p.control
+                                      button.btn-detail.is-light.button Hapus
+
+              .has-text-right
+                button.button.is-rounded(id=`showModal`) Tambahkan objek wisata
+
+  .modal(id=`modalTambahObjekWisata`)
+    .modal-background
+    .modal-card
+      header.modal-card-head
+        p.modal-card-title Modal title
+      section.modal-card-body
+        .field.has-addons
+          p.control.is-expanded
+            input.input(placeholder='Cari....')
+          p.control
+            a.button.is-info Cari
+
+        p.subtitle Rekomendasi buat Kamu
+
+        a(href=`#` id=`gedungSateCard`)
+          .card.is-light.margin-btn
+            .card-content
+              .media(style=`border:0px`)
+                .media-content
+                  .columns
+                    .column
+                      figure.image.is-2by1
+                        img(src='/assets/img/tempat-wisata/bandung.jpg')
+                    .column.txt-rght
+                      p tiket masuk
+                      p.subtitle.title-card Rp 0,-
+                  .columns
+                    .column
+                      p.subtitle.title-card Gedung Sate
+                      p Jalan Diponegoro No.1 Bandung
+
+        a(href=`#` id=`bandaraHuseinCard`)
+          .card.is-light.margin-btn
+            .card-content
+              .media(style=`border:0px`)
+                .media-content
+                  .columns
+                    .column
+                      figure.image.is-2by1
+                        img(src='/assets/img/tempat-wisata/husein-sastranegara.jpg')
+                    .column.txt-rght
+                  .columns
+                    .column
+                      p.subtitle.title-card Bandara Husein Sastranegara
+                      p Jl. Pajajaran No.156 Bandung
+
+
+      footer.modal-card-foot
+        button.button(id=`closeModal`) Cancel
+
+  .modal(id=`modalInputWaktu`)
+    .modal-background
+    .modal-card
+      header.modal-card-head
+        p.modal-card-title Pilih waktu wisata
+      section.modal-card-body
+        p.subtitle Bandara Husein Sastranegara
+          i.fas.fa-map-marker-alt(style=`margin-left:20px`)
+          span(style=`margin-left:20px`) Jl. Pajajaran No.156 Bandung
+
+        p Durasi Perjalanan
+        .field.has-addons
+          p.control.is-expanded
+            input.input(placeholder=`08.00`)
+          p.control
+            a.button.is-static1.is-white -
+          p.control.is-expanded
+            input.input(placeholder=`10.00` disabled)
+
+
+      footer.modal-card-foot
+        a.button(href=`/detailtrip/edit/4`) Tambahkan
+        button.button(id=`closeModal2`) Cancel
+
+block scripts
+  script().
+    $("#showModal").click(function() {
+      $("#modalTambahObjekWisata").addClass("is-active")
+    })
+
+    $("#closeModal").click(function() {
+      $("#modalTambahObjekWisata").removeClass("is-active")
+    })
+
+
+    $("#bandaraHuseinCard").click(function() {
+      $("#modalInputWaktu").addClass("is-active")
+      $("#modalTambahObjekWisata").removeClass("is-active")
+    })
+
+    $("#closeModal2").click(function() {
+      $("#modalInputWaktu").removeClass("is-active")
+    })

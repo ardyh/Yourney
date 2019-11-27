@@ -26,6 +26,36 @@ app.get('/detailtrip', (req, res) => res.render('pages/detailtrip', {
     username: 'Fariz'
 }));
 
+app.get('/detailtrip/edit/1', (req, res) => res.render('pages/choose-your-journey/1', {
+    userId: 1,
+    username: 'Fariz'
+}));
+
+app.get('/detailtrip/edit/2', (req, res) => res.render('pages/choose-your-journey/2', {
+    userId: 1,
+    username: 'Fariz'
+}));
+
+app.get('/detailtrip/edit/3', (req, res) => res.render('pages/choose-your-journey/3', {
+    userId: 1,
+    username: 'Fariz'
+}));
+
+app.get('/detailtrip/edit/4', (req, res) => res.render('pages/choose-your-journey/4', {
+    userId: 1,
+    username: 'Fariz'
+}));
+
+app.get('/detailtrip/edit/5', (req, res) => res.render('pages/choose-your-journey/5', {
+    userId: 1,
+    username: 'Fariz'
+}));
+
+app.get('/detailtrip/edit/6', (req, res) => res.render('pages/choose-your-journey/6', {
+    userId: 1,
+    username: 'Fariz'
+}));
+
 app.get('/blog', (req, res) => res.render('pages/blog', {
     userId: 1,
     username: 'Fariz'
