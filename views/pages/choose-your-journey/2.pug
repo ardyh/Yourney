@@ -2,20 +2,18 @@ extends ../../layout
 
 block content
   .ctn-header
-    section.hero.brdr-rds20.city-background(style=`background-image:url(/assets/img/tempat-wisata/sanghyang-heulut1-opacity.jpg)`)
+    section.hero.brdr-rds20.city-background(style=`background-image:url(/assets/img/tempat-wisata/kawah-putih-opacity.jpg)`)
       .hero-body
         .container
-          h1.title.title-card Bandung yang berbeda
-          h2.subtitle 3 Hari - Rp 5.000.000,-
+          h1.title.title-card Bandung yang Menyenangkan
+          h2.subtitle 3 Hari - Rp 2.500.000,-
           .columns
             .column.is-four-fifths
               p
-                i.fas.fa-star.rating-orange
-                i.fas.fa-star.rating-orange
-                i.fas.fa-star.rating-orange
-                i.fas.fa-star.rating-orange
-                i.fas.fa-star.rating-orange
-                |  5.0 / 5.0
+                i.fas.fa-thumbs-up
+                span.title-card(style=`margin-left:20px`) 421 like
+                i.fas.fa-plane-departure(style=`margin-left:20px`)
+                span.title-card(style=`margin-left:20px`) 1762x
             .column.txt-rght
               a.button.color-primary.color-text-primary.is-rounded(style=`margin-right:5px` href=`/detailtrip/edit/6`) Save
 
@@ -51,43 +49,43 @@ block content
       section.modal-card-body
         .field.has-addons
           p.control.is-expanded
-            input.input(placeholder='Cari....')
-          p.control
-            a.button.is-info Cari
+            input.input#inputCari(placeholder='Cari....')
+        div#isiCard
+          p.subtitle Rekomendasi buat Kamu
 
-        p.subtitle Rekomendasi buat Kamu
+          a(href=`#` id=`kawahPutihCard`)
+            .card.is-light.margin-btn
+              .card-content
+                .media(style=`border:0px`)
+                  .media-content
+                    .columns
+                      .column
+                        figure.image.is-2by1
+                          img(src='/assets/img/tempat-wisata/kawah-putih.jpg')
+                      .column.txt-rght
+                        p tiket masuk
+                        p.subtitle.title-card Rp 0,-
+                    .columns
+                      .column
+                        p.subtitle.title-card Kawah Putih
+                        p Sugihmukti Kecamatan Pasirjambu Bandung
 
-        a(href=`#` id=`gedungSateCard`)
-          .card.is-light.margin-btn
-            .card-content
-              .media(style=`border:0px`)
-                .media-content
-                  .columns
-                    .column
-                      figure.image.is-2by1
-                        img(src='/assets/img/tempat-wisata/bandung.jpg')
-                    .column.txt-rght
-                      p tiket masuk
-                      p.subtitle.title-card Rp 0,-
-                  .columns
-                    .column
-                      p.subtitle.title-card Gedung Sate
-                      p Jalan Diponegoro No.1 Bandung
-
-        a(href=`#` id=`bandaraHuseinCard`)
-          .card.is-light.margin-btn
-            .card-content
-              .media(style=`border:0px`)
-                .media-content
-                  .columns
-                    .column
-                      figure.image.is-2by1
-                        img(src='/assets/img/tempat-wisata/husein-sastranegara.jpg')
-                    .column.txt-rght
-                  .columns
-                    .column
-                      p.subtitle.title-card Bandara Husein Sastranegara
-                      p Jl. Pajajaran No.156 Bandung
+          a(href=`#` id=`gunungPadangCiwideyCard`)
+            .card.is-light.margin-btn
+              .card-content
+                .media(style=`border:0px`)
+                  .media-content
+                    .columns
+                      .column
+                        figure.image.is-2by1
+                          img(src='/assets/img/tempat-wisata/gunung-padang-ciwidey.jpg')
+                      .column.txt-rght
+                        p tiket masuk
+                        p.subtitle.title-card Rp 0,-
+                    .columns
+                      .column
+                        p.subtitle.title-card Gunung Padang Ciwidey
+                        p Wangunsari, Sindangkerta, Kabupaten Bandung Barat
 
       footer.modal-card-foot
         button.button(id=`closeModal`) Cancel
@@ -118,6 +116,8 @@ block content
         button.button(id=`closeModal2`) Cancel
 
 block scripts
+  script(src='/assets/js/interactive-modal.js')
+
   script().
     $("#showModal").click(function() {
       $("#modalTambahObjekWisata").addClass("is-active")
