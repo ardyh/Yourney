@@ -4,6 +4,8 @@ $('#inputCari').on('input',function(e){
 
 		var pRekomendasi = "<p class=\"subtitle\">Rekomendasi buat Kamu</p>"
 
+    var pLebihBanyak = "<p>Lebih banyak...</p>"
+
 		var aKawahPutih = `
 		<a href=\"#\" id=\"kawahPutihCard\">
 			<div class=\"card is-light margin-btn\">
@@ -157,10 +159,12 @@ $('#inputCari').on('input',function(e){
 			$("#isiCard").append(pRekomendasi);
 			$("#isiCard").append(aKawahPutih);
 			$("#isiCard").append(aGunungPadangCiwidey);
+      $("#isiCard").append(pLebihBanyak);
 		} else if (valueCari == "g") {
 			$("#isiCard").empty();
 			$("#isiCard").append(aGunungPadangCiwidey);
-			$("#isiCard").append(aGedungSate);
+      $("#isiCard").append(aGedungSate);
+			$("#isiCard").append(pLebihBanyak);
 
 			$("#showModal").click(function() {
 	      $("#modalTambahObjekWisata").addClass("is-active")
@@ -182,6 +186,7 @@ $('#inputCari').on('input',function(e){
 		} else if (valueCari == "s" || valueCari == "S" || valueCari == "st" || valueCari == "St" || valueCari == "sta" || valueCari == "Sta") {
 			$("#isiCard").empty();
 			$("#isiCard").append(aStasiunBandung);
+      $("#isiCard").append(pLebihBanyak);
 
 			$("#showModal").click(function() {
 	      $("#modalTambahObjekWisata").addClass("is-active")
@@ -203,6 +208,7 @@ $('#inputCari').on('input',function(e){
 		} else if (valueCari == "ge" || valueCari == "Ge" || valueCari == "ged" || valueCari == "Ged") {
 			$("#isiCard").empty();
 			$("#isiCard").append(aGedungSate);
+      $("#isiCard").append(pLebihBanyak);
 
 			$("#showModal").click(function() {
 	      $("#modalTambahObjekWisata").addClass("is-active")
