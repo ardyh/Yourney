@@ -161,12 +161,66 @@ $('#inputCari').on('input',function(e){
 			$("#isiCard").empty();
 			$("#isiCard").append(aGunungPadangCiwidey);
 			$("#isiCard").append(aGedungSate);
+
+			$("#showModal").click(function() {
+	      $("#modalTambahObjekWisata").addClass("is-active")
+	    })
+
+	    $("#closeModal").click(function() {
+	      $("#modalTambahObjekWisata").removeClass("is-active")
+	    })
+
+
+	    $("#gedungSateCard").click(function() {
+	      $("#modalInputWaktu").addClass("is-active")
+	      $("#modalTambahObjekWisata").removeClass("is-active")
+	    })
+
+	    $("#closeModal2").click(function() {
+	      $("#modalInputWaktu").removeClass("is-active")
+	    })
 		} else if (valueCari == "s" || valueCari == "S" || valueCari == "st" || valueCari == "St" || valueCari == "sta" || valueCari == "Sta") {
 			$("#isiCard").empty();
 			$("#isiCard").append(aStasiunBandung);
+
+			$("#showModal").click(function() {
+	      $("#modalTambahObjekWisata").addClass("is-active")
+	    })
+
+	    $("#closeModal").click(function() {
+	      $("#modalTambahObjekWisata").removeClass("is-active")
+	    })
+
+
+	    $("#stasiunBandungCard").click(function() {
+	      $("#modalInputWaktu").addClass("is-active")
+	      $("#modalTambahObjekWisata").removeClass("is-active")
+	    })
+
+	    $("#closeModal2").click(function() {
+	      $("#modalInputWaktu").removeClass("is-active")
+	    })
 		} else if (valueCari == "ge" || valueCari == "Ge" || valueCari == "ged" || valueCari == "Ged") {
 			$("#isiCard").empty();
 			$("#isiCard").append(aGedungSate);
+
+			$("#showModal").click(function() {
+	      $("#modalTambahObjekWisata").addClass("is-active")
+	    })
+
+	    $("#closeModal").click(function() {
+	      $("#modalTambahObjekWisata").removeClass("is-active")
+	    })
+
+
+	    $("#gedungSateCard").click(function() {
+	      $("#modalInputWaktu").addClass("is-active")
+	      $("#modalTambahObjekWisata").removeClass("is-active")
+	    })
+
+	    $("#closeModal2").click(function() {
+	      $("#modalInputWaktu").removeClass("is-active")
+	    })
 		} else {
 			$("#isiCard").empty();
 			$("#isiCard").append(pLoading);

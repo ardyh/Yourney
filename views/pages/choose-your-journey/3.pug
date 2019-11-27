@@ -79,45 +79,46 @@ block content
           p.control.is-expanded
             input.input#inputCari(placeholder='Cari....')
 
-        p.subtitle Rekomendasi buat Kamu
+        div#isiCard
+          p.subtitle Rekomendasi buat Kamu
 
-        a(href=`#` id=`kawahPutihCard`)
-          .card.is-light.margin-btn
-            .card-content
-              .media(style=`border:0px`)
-                .media-content
-                  .columns
-                    .column
-                      figure.image.is-2by1
-                        img(src='/assets/img/tempat-wisata/kawah-putih.jpg')
-                    .column.txt-rght
-                      p tiket masuk
-                      p.subtitle.title-card Rp 0,-
-                  .columns
-                    .column
-                      p.subtitle.title-card Kawah Putih
-                      p Sugihmukti Kecamatan Pasirjambu Bandung
+          a(href=`#` id=`kawahPutihCard`)
+            .card.is-light.margin-btn
+              .card-content
+                .media(style=`border:0px`)
+                  .media-content
+                    .columns
+                      .column
+                        figure.image.is-2by1
+                          img(src='/assets/img/tempat-wisata/kawah-putih.jpg')
+                      .column.txt-rght
+                        p tiket masuk
+                        p.subtitle.title-card Rp 0,-
+                    .columns
+                      .column
+                        p.subtitle.title-card Kawah Putih
+                        p Sugihmukti Kecamatan Pasirjambu Bandung
 
-        a(href=`#` id=`gunungPadangCiwideyCard`)
-          .card.is-light.margin-btn
-            .card-content
-              .media(style=`border:0px`)
-                .media-content
-                  .columns
-                    .column
-                      figure.image.is-2by1
-                        img(src='/assets/img/tempat-wisata/gunung-padang-ciwidey.jpg')
-                    .column.txt-rght
-                      p tiket masuk
-                      p.subtitle.title-card Rp 0,-
-                  .columns
-                    .column
-                      p.subtitle.title-card Gunung Padang Ciwidey
-                      p Wangunsari, Sindangkerta, Kabupaten Bandung Barat
+          a(href=`#` id=`gunungPadangCiwideyCard`)
+            .card.is-light.margin-btn
+              .card-content
+                .media(style=`border:0px`)
+                  .media-content
+                    .columns
+                      .column
+                        figure.image.is-2by1
+                          img(src='/assets/img/tempat-wisata/gunung-padang-ciwidey.jpg')
+                      .column.txt-rght
+                        p tiket masuk
+                        p.subtitle.title-card Rp 0,-
+                    .columns
+                      .column
+                        p.subtitle.title-card Gunung Padang Ciwidey
+                        p Wangunsari, Sindangkerta, Kabupaten Bandung Barat
 
 
-      footer.modal-card-foot
-        button.button(id=`closeModal`) Cancel
+        footer.modal-card-foot
+          button.button(id=`closeModal`) Cancel
 
   .modal(id=`modalInputWaktu`)
     .modal-background
@@ -125,9 +126,9 @@ block content
       header.modal-card-head
         p.modal-card-title Pilih waktu wisata
       section.modal-card-body
-        p.subtitle Bandara Husein Sastranegara
+        p.subtitle Stasiun Bandung
           i.fas.fa-map-marker-alt(style=`margin-left:20px`)
-          span(style=`margin-left:20px`) Jl. Pajajaran No.156 Bandung
+          span(style=`margin-left:20px`) Jl. Stasiun Barat, Kb. Jeruk, Kec. Andir, Kota Bandung
 
         p Durasi Perjalanan
         .field.has-addons
@@ -144,6 +145,8 @@ block content
         button.button(id=`closeModal2`) Cancel
 
 block scripts
+  script(src='/assets/js/interactive-modal.js')
+
   script().
     $("#showModal").click(function() {
       $("#modalTambahObjekWisata").addClass("is-active")
@@ -154,7 +157,7 @@ block scripts
     })
 
 
-    $("#bandaraHuseinCard").click(function() {
+    $("#stasiunBandungCard").click(function() {
       $("#modalInputWaktu").addClass("is-active")
       $("#modalTambahObjekWisata").removeClass("is-active")
     })
